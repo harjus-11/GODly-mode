@@ -1,0 +1,19 @@
+{
+  "id": "/",
+  "name": "OmniUnlock — Shizuku & Baseband 3GPP Lab",
+  "short_name": "OmniUnlock",
+  "description": "Universal network carrier unlock portal, Shizuku IPC bridge, 3GPP TS 22.022 & TS 23.003 baseband controller, and IMEI/NVM diagnostic workbench.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#060911",
+  "theme_color": "#060911",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

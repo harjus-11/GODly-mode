@@ -1,0 +1,8 @@
+{
+  "name": "CarrierUnbolt",
+  "description": "Effortlessly unlock your smartphone from any network provider with our simple, secure, and universal carrier removal tool.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

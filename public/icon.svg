@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="50%" stop-color="#0B132B" />
+      <stop offset="100%" stop-color="#061A23" />
+    </linearGradient>
+    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Squircle Chassis -->
+  <rect width="512" height="512" rx="116" fill="url(#bgGrad)" />
+  <rect x="20" y="20" width="472" height="472" rx="98" fill="none" stroke="url(#hexGrad)" stroke-width="6" stroke-opacity="0.45" />
+
+  <!-- Outer Baseband Hexagon Frame -->
+  <polygon
+    points="256,56 429,156 429,356 256,456 83,356 83,156"
+    fill="#091024"
+    stroke="url(#hexGrad)"
+    stroke-width="14"
+    stroke-linejoin="round"
+  />
+
+  <!-- Circuit Trace Pins (UART / NVM Bus Lines) -->
+  <g stroke="#22D3EE" stroke-width="8" stroke-linecap="round" opacity="0.8">
+    <line x1="256" y1="56" x2="256" y2="112" />
+    <line x1="256" y1="400" x2="256" y2="456" />
+    <line x1="83" y1="156" x2="132" y2="184" />
+    <line x1="380" y1="328" x2="429" y2="356" />
+    <line x1="429" y1="156" x2="380" y2="184" />
+    <line x1="132" y1="328" x2="83" y2="356" />
+  </g>
+
+  <!-- Inner Silicon Wafer Ring -->
+  <circle cx="256" cy="256" r="118" fill="#050914" stroke="#1E293B" stroke-width="10" />
+  <path
+    d="M 162 184 A 118 118 0 0 1 350 184"
+    fill="none"
+    stroke="#10B981"
+    stroke-width="10"
+    stroke-linecap="round"
+  />
+  <path
+    d="M 350 328 A 118 118 0 0 1 162 328"
+    fill="none"
+    stroke="#22D3EE"
+    stroke-width="10"
+    stroke-linecap="round"
+  />
+
+  <!-- Unlocked Shackle Wave (Top Open Loop) -->
+  <path
+    d="M 212 224 V 178 C 212 150 232 132 258 132 C 282 132 300 148 304 170"
+    fill="none"
+    stroke="url(#coreGrad)"
+    stroke-width="20"
+    stroke-linecap="round"
+  />
+
+  <!-- Central Baseband Microchip Core -->
+  <rect
+    x="184"
+    y="220"
+    width="144"
+    height="124"
+    rx="26"
+    fill="url(#coreGrad)"
+  />
+
+  <!-- Keyhole / Signal Node Inside Core -->
+  <circle cx="256" cy="268" r="18" fill="#050811" />
+  <path d="M 246 278 L 238 316 H 274 L 266 278 Z" fill="#050811" />
+
+  <!-- Corner Telemetry Nodes -->
+  <circle cx="256" cy="56" r="10" fill="#10B981" />
+  <circle cx="429" cy="156" r="10" fill="#22D3EE" />
+  <circle cx="429" cy="356" r="10" fill="#6366F1" />
+  <circle cx="256" cy="456" r="10" fill="#10B981" />
+  <circle cx="83" cy="356" r="10" fill="#22D3EE" />
+  <circle cx="83" cy="156" r="10" fill="#6366F1" />
+</svg>
